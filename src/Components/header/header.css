@@ -39,11 +39,17 @@
 
   
 
-  .header-container button{
+  .header-container .cart{
     background-color: #191919;
     border: none;
     box-shadow: none;
     cursor: pointer;
+    
+  }
+
+
+  .cart :hover{
+    fill: var(--color-primary)
   }
 
 
