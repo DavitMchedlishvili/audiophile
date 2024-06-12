@@ -41,6 +41,10 @@
 }
 
 
+.zx9-right p{
+    line-height: 25px;
+}
+
 
 
 .speaker-img {
@@ -58,4 +62,6 @@
     bottom: -300px;
     z-index: 1;
   }
+
+
 

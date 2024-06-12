@@ -12,7 +12,7 @@ const SpeakerZx9 = () => {
         <div className="zx9-right">
           <h1>ZX9 Speaker</h1>
            <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-           <a  href="#">See Product</a>
+           <a href="#">See Product</a>
         </div>
       </div>
     </section>

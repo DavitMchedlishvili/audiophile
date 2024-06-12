@@ -1,10 +1,14 @@
+.earphones{
+    margin-top: 50px;
+}
+
 .earphones-section{
     display: flex;
     flex-direction: row;
     gap: 30px;
     
 
-    margin-top: 50px;
+    
 }
 
 

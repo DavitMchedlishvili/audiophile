@@ -1,3 +1,7 @@
+.gear-article{
+    margin: 200px auto;
+}
+
 .gear-container{
     max-height: 588px;
 
@@ -6,7 +10,7 @@
     align-items: center;
     gap: 125px;
 
-    margin: 200px auto;
+    
 }
 
 
