@@ -1,0 +1,61 @@
+.speaker-zx9{
+    margin-top: 168px;
+}
+
+.speaker-zx9-container{
+    background-color: #d87d4a;
+    min-height: 560px;
+    padding: 60px 40px;
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 10px;
+   
+}
+
+
+.zx9-right{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.zx9-right h1{
+    text-transform: uppercase;  
+    font-size: 56px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+.zx9-right a{
+    margin-top: 15px;
+}
+
+
+
+
+.speaker-img {
+    position: absolute;
+    bottom: -20px;
+    left: 100px;
+    max-width: 410px;
+    z-index: 2;
+  }
+  
+  .circle-img {
+    position: absolute;
+    max-width: 944px;
+    left: -150px;
+    bottom: -300px;
+    z-index: 1;
+  }
+

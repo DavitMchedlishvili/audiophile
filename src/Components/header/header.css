@@ -1,0 +1,52 @@
+.header {
+    background-color: #191919;
+    /* padding: 0px 24px; */
+    color: white;
+  }
+  
+ .header-container {
+    display: flex;
+    padding: 32px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid hsla(0, 0%, 59%, 0.2);
+    align-items: center;
+  }
+
+  .header-logo{
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 34px;
+    
+  }
+
+
+  .navigation-links{
+    font-size: 13px;
+    font-family: "Manrope";
+    font-weight: bold;
+    
+  }
+
+  .navigation-links:hover{
+    color: #D87D4A
+  }
+
+
+  .header-logo{
+    text-transform: lowercase;
+
+  }
+
+  .header-container button{
+    background-color: #191919;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+
+  

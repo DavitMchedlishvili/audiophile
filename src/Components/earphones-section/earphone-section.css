@@ -1,0 +1,41 @@
+.earphones-section{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+
+    margin-top: 50px;
+}
+
+
+
+.earphones-img{
+    
+    border-radius: 10px;
+    
+}
+    
+ 
+.earphones-left{
+    max-height: 320px;
+    width: 50%;
+    
+    
+}
+
+.earphones-right{
+        width: 50%;
+        background-color: #F1F1F1;    
+        
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 10px;
+
+        padding: 101px 95px;
+        gap: 32px;
+}
+
+
+
+

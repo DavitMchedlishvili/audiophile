@@ -1,0 +1,39 @@
+.gear-container{
+    max-height: 588px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 125px;
+
+    margin: 200px auto;
+}
+
+
+
+
+.gear-left{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.gear-left h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    
+}
+
+.gear-left h1 span{
+    color: var(--color-primary);
+}
+
+.gear-left p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.gear-right img{
+    
+    border-radius: 10px;
+}

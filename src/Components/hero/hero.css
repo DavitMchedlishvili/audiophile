@@ -1,0 +1,56 @@
+.hero {
+    background-color: #191919;
+    padding: 0 24px;
+    color: white;
+    margin-bottom: 120px;
+    
+  }
+  
+  .hero-container {
+    height: 100%;
+    
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  
+    background: url("../../assets/home/desktop/image-hero.jpg");
+    background-size: 130%;
+    background-position: -200px -100px;
+    background-repeat: no-repeat;
+
+  }
+  
+  .hero-left {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 130px 0 160px 0px;
+  }
+  
+  .hero-left h1 {
+    font-size: 58px;
+    line-height: 1;
+  }
+
+  .hero-left p{
+    font-size: 15px;
+    line-height: 25px;
+    
+  }
+
+  .hero-left a{
+    margin-top: 40px;
+  }
+
+
+  
+.new-product{
+  color: gray;
+  font-size: 14px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
