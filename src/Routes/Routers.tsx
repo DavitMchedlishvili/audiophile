@@ -10,6 +10,7 @@ const Routers = () => {
     
    <Routes>
       <Route path="/" element={<Home/>}/>
+      {/* <Route path="/products/:productName" */}
       <Route path="/earphones" element={<Earphones/>}/>
       <Route path="/speakers" element={<Speakers/>}/>
       <Route path="/headphones" element={<Headphones/>}/>
