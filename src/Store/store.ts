@@ -3,7 +3,7 @@
 
  const store = configureStore({
     reducer: {
-        product: ProductsReducer
+        products: ProductsReducer
     }
  })
 

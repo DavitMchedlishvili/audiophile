@@ -38,4 +38,4 @@ export interface Other {
 }
 
 
-export type Data = Product[]
+export type Data = Product[];

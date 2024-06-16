@@ -3,7 +3,7 @@ import api from "../../Config/api";
 import { Data } from "../../Types/products";
 
 
- export const fetchProducts =createAsyncThunk("products/fetchProducts", async (_, ThunkApi) => {
+ export const fetchProducts = createAsyncThunk("products/fetchProducts", async (_, ThunkApi) => {
     try{
         const response = await api.get<Data[]>("/products")
         return response.data
