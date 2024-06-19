@@ -6,7 +6,7 @@ const SpeakerZx7 = () => {
         <div className="container speaker-zx7-container">
             <div className="zx7-left">
                 <h1>ZX7 SPEAKER</h1>
-                <a href="#">See Product</a>
+                <a className="gray-btn" href="#">See Product</a>
             </div>
         </div>
     </section>

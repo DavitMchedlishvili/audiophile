@@ -48,7 +48,7 @@
   }
 
 
-  .cart :hover{
+  .cart:hover svg path{
     fill: var(--color-primary)
   }
 

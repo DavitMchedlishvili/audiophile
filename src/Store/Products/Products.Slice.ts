@@ -5,7 +5,7 @@ import { fetchProducts } from "./Products.asyncActions";
 
 type InitialState = {
     status: 'idle' | 'loading' | 'loaded' | 'failed'
-    data: Data[],
+    data: Data,
     error: undefined | string,
 }
 

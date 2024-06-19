@@ -1,23 +1,24 @@
+
 import "./header.css";
 
 const Header = () => {
   return (
     <div className="header">
       <div className="container header-container">
-        <a className="header-logo" href="#">
+        <a className="header-logo" href="/">
           audiophile
         </a>
         <div className="navigation">
           <a className="navigation-links" href="/">
             Home
           </a>
-          <a className="navigation-links" href="/headphones">
+          <a className="navigation-links" href="/products/headphones">
             Headphones
           </a>
-          <a className="navigation-links" href="/speakers">
+          <a className="navigation-links" href="/products/speakers">
             Speakers
           </a>
-          <a className="navigation-links" href="/earphones">
+          <a className="navigation-links" href="/products/earphones">
             Earphones
           </a>
         </div>

@@ -5,7 +5,7 @@ import { Data } from "../../Types/products";
 
  export const fetchProducts = createAsyncThunk("products/fetchProducts", async (_, ThunkApi) => {
     try{
-        const response = await api.get<Data[]>("/products")
+        const response = await api.get<Data>("/products")
         return response.data
     }catch(error){
         if(error instanceof Error){

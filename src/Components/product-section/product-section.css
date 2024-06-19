@@ -47,9 +47,19 @@
 }
 
 
+.shop-btn{
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+}
+
 .product-card a:hover{
     color: #D87D4A
 }
+
+
+
 
 
 

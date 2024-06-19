@@ -38,3 +38,63 @@ a{
 }
 
 
+.orange-btn{
+  max-width: 150px;
+
+  color: white;
+  font-size: 13px;
+
+  padding: 15px 30px;
+  background-color: #D87D4A;
+}
+
+.orange-btn:hover{
+  background-color: #FBAF85;
+} 
+
+
+
+.black-btn{
+
+  max-width: 150px;
+
+  color: white;
+  font-size: 13px;
+
+  padding: 15px 30px;
+  background-color:    #000000; 
+
+  z-index: 3;
+}
+
+
+.black-btn:hover{
+  background-color: #FFFFFF;
+  color: black;
+}
+
+
+
+.gray-btn{
+
+
+  max-width: 152px;
+
+  border: black 1px solid;
+
+
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+
+  padding: 15px 30px;
+  background-color:    #f1f1f1; 
+
+
+}
+
+.gray-btn:hover{
+  background-color: #000000;
+  color: white;
+}
+
