@@ -1,0 +1,179 @@
+
+.product-details-overall{
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+
+    
+
+   
+
+}
+
+
+.product-details-container{
+   
+    display: flex;
+    
+}
+
+
+.product-details-image{
+    width: 560px;
+    border-radius: 10px;
+}
+
+
+.product-details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 75px 125px;
+}
+
+.product-details-name {
+    margin-bottom: 32px;
+
+}
+
+.product-details-description{
+    color: gray;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 32px;
+    
+}
+
+
+.product-details-price{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.product-details-buttons{
+    margin-top: 50px;
+    display: flex;
+    
+}
+
+
+.minus-btn, .plus-btn{
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    background-color: #F1F1F1;
+    
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.counter{
+
+    padding: 15px;
+    background-color: #F1F1F1;
+    
+    
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    
+}
+
+
+.addToCart-btn{
+    border: none;
+    cursor: pointer;
+
+    margin-left: 16px;
+}
+
+
+.additional-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+
+}
+
+
+.features{
+    width: 60%;
+    
+}
+
+.features  h1{
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.features p{
+    color: gray;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.inTheBox {
+    width: 30%;
+    
+}
+
+
+.inTheBox h1{
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+
+.product-includes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.includes-list{
+    font-size: 15px;
+}
+
+.list-item{
+    color: gray;
+}
+
+
+.list-quantity{
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gallery-left{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+
+.gallery img{
+    border-radius: 10px;
+}
+
+
+
+
