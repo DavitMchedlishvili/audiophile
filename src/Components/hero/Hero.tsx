@@ -12,7 +12,7 @@ const Hero = () => {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <a className="orange-btn" href="#">See product</a>
+          <a className="orange-btn" href="/products/headphones/4">See product</a>
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@ const EarphoneSection = () => {
             </div>
             <div className="earphones-right">
                 <h1>YX1 EARPHONES</h1>
-                <a className="gray-btn" href="#">See Product</a>
+                <a className="gray-btn" href="/products/earphones/1">See Product</a>
             </div>
         </div>
     </section>

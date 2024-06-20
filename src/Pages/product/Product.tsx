@@ -6,6 +6,7 @@ import GoBackButton from "../../Components/go-back-button/GoBackButton";
 import "./product.css";
 import ProductSection from "../../Components/product-section/ProductSection";
 import Article from "../../Components/article-section/Article";
+import RandomProducts from "../../Components/may-like/RandomProducts";
 
 const Product: React.FC = () => {
   const param = useParams();
@@ -47,7 +48,7 @@ const Product: React.FC = () => {
   };
 
   return (
-    <>
+    <div className="components-div">
       <div className="container">
         <GoBackButton />
         <div className="product-details-overall">
@@ -106,32 +107,40 @@ const Product: React.FC = () => {
           </div>
 
           <div className="gallery">
-        <div className="gallery-left">
-        <img
-          className="gallery-left-top"
-          src={`/${product.gallery.first.desktop}`}
-          alt="image"
-        />
-        <img
-          className="gallery-left-bottom"
-          src={`/${product.gallery.second.desktop}`}
-          alt="image"
-        />
-        </div>
-        <div className="gallery-right">
-        <img
-          className="gallery-right-image"
-          src={`/${product.gallery.third.desktop}`}
-          alt="image"
-        />     
-        </div>
-      </div>
-      <ProductSection/>
-        <Article/>
+            <div className="gallery-left">
+              <img
+                className="gallery-left-top"
+                src={`/${product.gallery.first.desktop}`}
+                alt="image"
+              />
+              <img
+                className="gallery-left-bottom"
+                src={`/${product.gallery.second.desktop}`}
+                alt="image"
+              />
+            </div>
+            <div className="gallery-right">
+              <img
+                className="gallery-right-image"
+                src={`/${product.gallery.third.desktop}`}
+                alt="image"
+              />
+            </div>
+          </div>
+          
+          {/* <RandomProducts /> */}
+          
+        
         </div>
         
+        
+        
       </div>
-    </>
+      <RandomProducts/>
+      <ProductSection/>
+      <Article />
+      
+    </div>
   );
 };
 
