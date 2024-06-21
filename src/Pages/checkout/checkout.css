@@ -1,0 +1,118 @@
+
+.checkout-body{
+    background-color: #F2F2F2;
+   
+}
+
+
+
+
+
+.checkout-inputs-container{
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 55px 48px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 55px;
+}
+
+
+
+
+
+
+
+.billing-details h3{
+    color: var(--color-primary);
+    margin-bottom: 16px;
+}
+
+
+
+form{
+    width: 100%;
+   
+    display: flex;    
+    flex-wrap: wrap;
+
+}
+
+
+label{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+
+
+input:focus {
+    border-color: var(--color-primary); 
+    outline: none; 
+}
+
+
+
+
+.billing-details-left, .billing-details-right{
+    width: 50%;
+    padding-right: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    border:  green solid 2px;
+}
+
+
+
+.shipping-info h3{
+    color: var(--color-primary);
+    margin-bottom: 16px;
+}
+
+.address-div{
+    width: 100%;
+    display: flex;
+    
+}
+
+
+.address-additional{
+    display: flex;
+
+    border:  green solid 2px;
+
+    width: 100%;
+
+}
+
+
+.address-additional-right, .address-additional-left{
+    width: 50%;
+    padding-right: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    border:  green solid 2px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -4,8 +4,9 @@ import Home from "../Pages/Home";
 // import Speakers from "../Pages/Speakers"
 // import Headphones from "../Pages/Headphones"
 import Products from "../Pages/products/Products";
-import Checkout from "../Pages/Checkout";
+
 import Product from "../Pages/product/Product";
+import Checkout from "../Pages/checkout/Checkout";
 
 const Routers = () => {
   return (
@@ -13,12 +14,8 @@ const Routers = () => {
       <Route path="/" element={<Home />} />
       <Route path="/products/:productName" element={<Products />} />
       <Route path="/products/:productName/:productId" element={<Product />} />
-      <Route path="/checkout" element={<Checkout />} />
+      <Route path="/checkout" element={<Checkout/>} />
 
-      {/* <Route path="/products/:productName"
-      <Route path="/earphones" element={<Earphones/>}/>
-      <Route path="/speakers" element={<Speakers/>}/>
-      <Route path="/headphones" element={<Headphones/>}/> */}
     </Routes>
   );
 };

@@ -10,5 +10,10 @@
     margin-top: 79px;
     margin-bottom: 56px;
 
-    
+
+}
+
+
+.goBack-btn:hover{
+    color: var(--color-primary);
 }

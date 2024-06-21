@@ -26,8 +26,8 @@ const Product: React.FC = () => {
     }
   }, [dispatch, productsData.length]);
 
-  const numericProductId = +param.productId;
-  const product = productsData.find((p) => +p.id === numericProductId);
+  // const numericProductId =  param.productId;
+  const product = productsData.find((p) => p.id === param.productId);
 
   if (status === "failed") {
     return <div className="container data-error-massage">error happend</div>;
@@ -128,7 +128,7 @@ const Product: React.FC = () => {
             </div>
           </div>
           
-          {/* <RandomProducts /> */}
+          
           
         
         </div>

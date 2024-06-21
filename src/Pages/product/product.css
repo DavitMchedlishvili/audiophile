@@ -72,6 +72,10 @@
     text-decoration: none;
 }
 
+.product-details-buttons button:hover{
+    color: var(--color-primary)
+}
+
 .counter{
 
     padding: 15px;
@@ -90,6 +94,8 @@
     cursor: pointer;
 
     margin-left: 16px;
+
+    text-transform: uppercase;
 }
 
 
