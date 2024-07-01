@@ -9,6 +9,7 @@ type InputProps = {
   id?: string;
   errorMsg?: string;
   name?: string;
+  checked?:boolean
 };
 
 const Input = ({

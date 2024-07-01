@@ -7,18 +7,32 @@ import "./product.css";
 import ProductSection from "../../Components/product-section/ProductSection";
 import Article from "../../Components/article-section/Article";
 import RandomProducts from "../../Components/may-like/RandomProducts";
+import {  Product } from "../../Types/products";
+import { cartItem, updateCart } from "../../Store/Cart.Slice";
+import Counter from "../../Components/counter/Counter";
 
-const Product: React.FC = () => {
+
+
+
+export const getProductCurrNumber = (cartArray: cartItem[], product: Product) => {
+  const prod = cartArray.find((prod) => prod.product.id === product?.id);
+  if (prod) {
+    return prod.amount;
+  }
+  return 1;
+};
+
+const SingleProduct: React.FC = () => {
   const param = useParams();
-
+  const [num, setNum] = useState(1);
+  const cartArray = useAppSelector((state) => state.cart.value);
   const dispatch = useAppDispatch();
   const productsData = useAppSelector((state) => state.products.data);
   const status = useAppSelector((state) => state.products.status);
 
-  const [count, setCount] = useState(1);
 
-  const increase = () => setCount((prev) => prev + 1);
-  const decrease = () => setCount((prev) => (prev > 1 ? prev - 1 : 1));
+
+  
 
   useEffect(() => {
     if (productsData.length === 0) {
@@ -28,6 +42,15 @@ const Product: React.FC = () => {
 
   // const numericProductId =  param.productId;
   const product = productsData.find((p) => p.id === param.productId);
+
+  useEffect(() => {
+    if (!product) return;
+    setNum(getProductCurrNumber(cartArray, product));
+  }, [product, setNum, cartArray]);
+
+  useEffect(() => {
+    console.log("Cart State:", cartArray);
+  }, [cartArray]);
 
   if (status === "failed") {
     return <div className="container data-error-massage">error happend</div>;
@@ -68,15 +91,13 @@ const Product: React.FC = () => {
                 $ {formatNumberWithDots(product.price)}
               </p>
               <div className="product-details-buttons">
-                <button className="minus-btn" onClick={decrease}>
-                  -
-                </button>
-                <span className="counter">{count}</span>
-                <button className="plus-btn" onClick={increase}>
-                  +
-                </button>
-                <button className="addToCart-btn orange-btn">
-                  Add To Cart
+                <Counter maxQuantity={50} number={num} setNumber={setNum}/>
+
+                <button
+                  className="addToCart-btn orange-btn"
+                  onClick={() => dispatch(updateCart({ num, product }))}
+                >
+                  ADD TO CART
                 </button>
               </div>
             </div>
@@ -127,21 +148,13 @@ const Product: React.FC = () => {
               />
             </div>
           </div>
-          
-          
-          
-        
         </div>
-        
-        
-        
       </div>
-      <RandomProducts/>
-      <ProductSection/>
+      <RandomProducts />
+      <ProductSection />
       <Article />
-      
     </div>
   );
 };
 
-export default Product;
+export default SingleProduct;

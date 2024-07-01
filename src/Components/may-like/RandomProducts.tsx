@@ -21,13 +21,13 @@ const RandomProducts = () => {
       <h1>You May Also Like</h1>
       <div className="random-products-cards">
         {randomPorudcts.map((product) => (
-            <>
+            
             <div key={product.id} className="random-product-Singlecard">
                 <img  src={`/${product.image.desktop}`}alt="" />
                 <h3>{product.name}</h3>
                 <a className="orange-btn" href={`/products/${param.productName}/${product.id}`}>See Product</a>
              </div>
-            </>
+            
         ))}
       </div>
     </div>

@@ -6,6 +6,11 @@ import ProductSection from "../../Components/product-section/ProductSection";
 import Article from "../../Components/article-section/Article";
 import "./products.css";
 
+
+
+
+
+
 const Products = () => {
   const params = useParams();
 
@@ -41,7 +46,7 @@ const Products = () => {
                   <div className="product-container" key={item.id}>
                     <div
                       className={
-                        item.id % 2 === 1
+                        +item.id % 2 === 1
                           ? "single-product  reverse"
                           : "single-product"
                       }

@@ -36,6 +36,7 @@ const Checkout = () => {
                       label={"Phone"}
                       placeholder="phone number"
                       errorMsg="Wrong Info"
+                      
                     />
                   </div>
                 </div>
@@ -124,13 +125,13 @@ const Checkout = () => {
                 <div className="payment-options-right">
                   <Input
                   type="radio"
-                  name="e-money"
+                  name="payment-method"
                   id="e-money"
                   label="E-Money"
                   />
                   <Input
                   type="radio"
-                  name="cash"
+                  name="payment-method"
                   id="Cash on Delivery"
                   label="Cash on Delivery"
                   />
