@@ -1,6 +1,6 @@
-import { Dispatch,  } from "react";
+import { Dispatch } from "react";
 import Modal from "react-modal";
-import "./cart.css"
+import "./cart.css";
 import { Link, useNavigate } from "react-router-dom";
 import { Rootstate } from "../../Store/type";
 import { useAppSelector } from "../../Store/hooks";
@@ -8,79 +8,74 @@ import Counter from "../counter/Counter";
 import { useDispatch } from "react-redux";
 import { getProductCurrNumber } from "../../Pages/product/Product";
 import { clearCart, updateCart } from "../../Store/Cart.Slice";
-
+import ClearCartButton from "../clearCart-btn/ClearCart";
 
 type Props = {
-    modalIsOpen: boolean;
-    setIsOpen: Dispatch<React.SetStateAction<boolean>>;
-}
+  modalIsOpen: boolean;
+  setIsOpen: Dispatch<React.SetStateAction<boolean>>;
+};
 
-const Cart = ({modalIsOpen, setIsOpen}: Props) => {
+const Cart = ({ modalIsOpen, setIsOpen }: Props) => {
+  // const navigate = useNavigate();
 
-    const navigate = useNavigate();
+  const cartArray = useAppSelector((state: Rootstate) => state.cart.value);
+  const dispatch = useDispatch();
 
-    const cartArray = useAppSelector((state: Rootstate) => state.cart.value)
-    const dispatch = useDispatch();
-    
-    console.log(cartArray)
+  console.log(cartArray);
 
   return (
     <>
-        <Modal 
-         className="cart-modal"
-         isOpen={modalIsOpen}
-         onAfterOpen={() => (document.body.style.overflow = "hidden")}
-         onAfterClose={() => (document.body.style.overflow = "auto")}
-         shouldCloseOnOverlayClick={true}
-         onRequestClose={() => setIsOpen(false)}>
+    <div className="container">
+    <Modal
+        className="cart-modal"
+        isOpen={modalIsOpen}
+        onAfterOpen={() => (document.body.style.overflow = "hidden")}
+        onAfterClose={() => (document.body.style.overflow = "auto")}
+        shouldCloseOnOverlayClick={true}
+        onRequestClose={() => setIsOpen(false)}
+      >
+        <div className="cart-container">
+          <div className="cart-top">
+          <h1>Cart ({cartArray.length})</h1>
+          <ClearCartButton/>
+          </div>
+          
+          <div className="cart-product-container">
+            {cartArray.map((item) => {
+              return (
+                <div className="cart-single-product" key={item.product.id}>
+                  <img
+                    width={50}
+                    src={`/${item.product?.image.desktop}`}
+                    alt="image"
+                  />
+                  <div className="cart-product-details">
+                  <p>{item.product.name}</p>
+                  <p>{item.product.price}</p>
+                  </div>
+                  
+                  
 
-            <div>
-            <h1>cart</h1> 
-            <button onClick={() => clearCart()}>remove all</button>
-                
-            {cartArray.map((item)=>{
-                
-                return <div key={item.product.id}>
-                <p>{item.amount}</p>
-                <p>
-                   {item.product.name}
-                </p> 
-                <p>{item.product.price}</p>
-                <img  width={50}
-                  src={`/${item.product?.image.desktop}`}
-                  alt="image" />
-
-                   <Counter
-                      maxQuantity={50}
-                      minAmount={0}
-                      number={getProductCurrNumber(cartArray, item.product)}
-                      setNumber={(num: number) =>
-                        dispatch(updateCart({ num, product: item.product }))
-                      }
-                    />
+                  <Counter
+                    maxQuantity={50}
+                    minAmount={0}
+                    number={getProductCurrNumber(cartArray, item.product)}
+                    setNumber={(num: number) =>
+                      dispatch(updateCart({ num, product: item.product }))
+                    }
+                  />
                 </div>
-               
+              );
             })}
+          </div>
 
-            <Link to={"/checkout"}>Checkout</Link>
-              </div>               
-             
-
-              
-            
-
-
-
-        </Modal>
-
+          <Link to={"/checkout"}>Checkout</Link>
+        </div>
+      </Modal>
+    </div>
+      
     </>
+  );
+};
 
-
-    
-  )
-}
-
-export default Cart
-
-
-
+export default Cart;

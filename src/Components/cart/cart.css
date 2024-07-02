@@ -29,3 +29,33 @@
     align-items: center;
     /* transition: 0.5s; */
   }
+
+
+  .cart-container{
+    border: red solid 2px;
+    width: 100%;
+  }
+
+
+  .cart-top{
+    border: red solid 2px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  .cart-product-container{
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+  }
+
+
+  .cart-single-product{
+    display: flex;
+  }
+
+  .cart-single-product img{
+    width: 64px;
+  }
