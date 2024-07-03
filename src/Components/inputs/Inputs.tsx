@@ -53,7 +53,7 @@ const Input = ({
             input: true,
             isError: true
           })}
-          placeholder={` Insert your ${placeholder}`}
+          placeholder={` Enter your ${placeholder}`}
           type={type}
         />
       </div>

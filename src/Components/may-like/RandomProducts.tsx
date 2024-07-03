@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useAppSelector } from "../../Store/hooks";
 import { Data } from "../../Types/products";
 import "./random-products.css"
@@ -25,7 +25,7 @@ const RandomProducts = () => {
             <div key={product.id} className="random-product-Singlecard">
                 <img  src={`/${product.image.desktop}`}alt="" />
                 <h3>{product.name}</h3>
-                <a className="orange-btn" href={`/products/${param.productName}/${product.id}`}>See Product</a>
+                <Link className="orange-btn" to={`/products/${param.productName}/${product.id}`}>See Product</Link>
              </div>
             
         ))}

@@ -1,0 +1,8 @@
+.clearCart-btn{
+    all: unset;
+
+    color: gray;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: underline;
+}
