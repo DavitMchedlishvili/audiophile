@@ -6,6 +6,7 @@ import ArticleIMG from "../../assets/shared/desktop/image-best-gear.jpg"
 
 const Article = () => {
   return (
+    
     <article className="gear-article">
       <div className="container gear-container">
         <div className="gear-left">

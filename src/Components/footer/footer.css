@@ -1,5 +1,5 @@
 footer{
-    margin-top: 160px;
+    /* margin-top: 160px; */
     background-color: #191919;
     padding-bottom: 36px;
 }
@@ -29,6 +29,7 @@ footer{
 
 .footer-navigation-links{
     font-size: 13px;
+    font-weight: bold;
     display: flex;
     gap: 34px;
 }

@@ -1,3 +1,8 @@
+.gear-article{
+    margin-bottom: 160px;
+    
+}
+
 
 .gear-container{
     max-height: 588px;
@@ -6,6 +11,8 @@
     flex-direction: row;
     align-items: center;
     gap: 125px;
+
+  
 
     
 }
@@ -32,9 +39,12 @@
 .gear-left p{
     font-size: 15px;
     line-height: 25px;
+    
+    
 }
 
 .gear-right img{
     
     border-radius: 10px;
+    
 }

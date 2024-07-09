@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container footer-container">
         <div className="footer-line"></div>
           <div className="footer-navigation">
-            <a className="footer-logo" href="/">audiophile</a>
+            <Link className="footer-logo" to="/">audiophile</Link>
             <div className="footer-navigation-links">
               <Link to="/">Home</Link>
               <Link to="/products/headphones">Headphones</Link>

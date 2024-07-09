@@ -7,19 +7,23 @@ import "./product.css";
 import ProductSection from "../../Components/product-section/ProductSection";
 import Article from "../../Components/article-section/Article";
 import RandomProducts from "../../Components/may-like/RandomProducts";
-import {  Product } from "../../Types/products";
+import { Product } from "../../Types/products";
 import { cartItem, updateCart } from "../../Store/Cart.Slice";
 import Counter from "../../Components/counter/Counter";
 
-
-
-
-export const getProductCurrNumber = (cartArray: cartItem[], product: Product) => {
+export const getProductCurrNumber = (
+  cartArray: cartItem[],
+  product: Product
+) => {
   const prod = cartArray.find((prod) => prod.product.id === product?.id);
   if (prod) {
     return prod.amount;
   }
   return 1;
+};
+
+export const formatNumberWithDots = (number: number) => {
+  return new Intl.NumberFormat("en-US").format(number);
 };
 
 const SingleProduct: React.FC = () => {
@@ -29,10 +33,6 @@ const SingleProduct: React.FC = () => {
   const dispatch = useAppDispatch();
   const productsData = useAppSelector((state) => state.products.data);
   const status = useAppSelector((state) => state.products.status);
-
-
-
-  
 
   useEffect(() => {
     if (productsData.length === 0) {
@@ -66,10 +66,6 @@ const SingleProduct: React.FC = () => {
     );
   }
 
-  const formatNumberWithDots = (number: number) => {
-    return new Intl.NumberFormat("en-US").format(number);
-  };
-
   return (
     <div className="components-div">
       <div className="container">
@@ -91,7 +87,7 @@ const SingleProduct: React.FC = () => {
                 $ {formatNumberWithDots(product.price)}
               </p>
               <div className="product-details-buttons">
-                <Counter maxQuantity={50} number={num} setNumber={setNum}/>
+                <Counter maxQuantity={50} number={num} setNumber={setNum} />
 
                 <button
                   className="addToCart-btn orange-btn"

@@ -6,7 +6,7 @@
     position: relative;
     padding-top: 20px;
 
-    border: red solid 2px;
+   
     
 
     width: 100%;
@@ -67,7 +67,7 @@
     align-items: center;
     gap: 5px;
   
-    border: 1px solid var(--color-primary);
+    border: 1px solid #cfcfcf;
     font-size: 14px;
     font-weight: bold;
     padding: 18px 24px;
@@ -75,6 +75,10 @@
   
     /* margin: 20px 0; */
     border-radius: 8px;
+  }
+
+  .radio-input-wrapper:has(input:focus){
+   border-color:var(--color-primary);
   }
   
   .radio-input-wrapper input {
