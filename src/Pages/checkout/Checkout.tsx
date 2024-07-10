@@ -7,6 +7,7 @@ import { formatNumberWithDots } from "../product/Product";
 import "./checkout.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import CheckoutModal from "../../Components/checkout-modal/CheckoutModal";
 
 export type Inputs = {
   name: string;
@@ -22,6 +23,7 @@ export type Inputs = {
 };
 
 const Checkout = () => {
+  const [modalIsOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const cartArray = useAppSelector((state: Rootstate) => state.cart.value);
   const [paymentMethod, setPaymentMethod] = useState<"e-money" | "cash">(
@@ -43,6 +45,7 @@ const Checkout = () => {
 
   const onSubmit = (data: Inputs) => {
     console.log("btn works", data);
+    setIsOpen(true);
   };
 
   useEffect(() => {
@@ -166,7 +169,7 @@ const Checkout = () => {
                           {...register("zipCode", {
                             required: {
                               value: true,
-                              message: "Please enter your zip code",
+                              message: "Enter your zip code",
                             },
                             minLength: {
                               value: 4,
@@ -358,6 +361,7 @@ const Checkout = () => {
             </div>
           </form>
         </div>
+        <CheckoutModal modalIsOpen={modalIsOpen} setIsOpen={setIsOpen}/>
       </div>
     </>
   );
