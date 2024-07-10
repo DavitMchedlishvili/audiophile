@@ -31,8 +31,8 @@ const Products = () => {
   }
 
   return (
-    <>
-      <div className="product-name-container">
+    <><div className="products-page-overall">
+ <div className="product-name-container">
         <h1>{params.productName}</h1>
       </div>
       <div className="container products-page-container">
@@ -72,9 +72,13 @@ const Products = () => {
               }
             })}
 
-        <ProductSection />
-        <Article />
+        
       </div>
+      <ProductSection />
+      <Article />
+    </div>
+     
+      
     </>
   );
 };

@@ -6,6 +6,13 @@
 }
 
 
+.products-page-overall{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 160px;
+}
+ 
 .product-name-container{
     
     background-color: #191919;
@@ -15,8 +22,9 @@
     display: flex;
     justify-content: center;
 
-    margin-bottom: 160px;
+    
 
+    
     
 }
 

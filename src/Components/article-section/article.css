@@ -1,18 +1,22 @@
 .gear-article{
     margin-bottom: 160px;
     
+    width: 100%;
 }
 
 
 .gear-container{
     max-height: 588px;
-
+    margin-bottom: 160px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 125px;
+    justify-content: space-between;
 
-  
+    
+    width: 100%;
+    
 
     
 }
