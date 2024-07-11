@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom"
 import "./speaker-zx7.css"
+import "./speaker-zx7-tablet.css"
 
 const SpeakerZx7 = () => {
   return (
@@ -6,7 +8,7 @@ const SpeakerZx7 = () => {
         <div className="container speaker-zx7-container">
             <div className="zx7-left">
                 <h1>ZX7 SPEAKER</h1>
-                <a className="gray-btn" href="/products/speakers/5">See Product</a>
+                <Link className="gray-btn" to="/products/speakers/5">See Product</Link>
             </div>
         </div>
     </section>

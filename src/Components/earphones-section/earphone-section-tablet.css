@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+  .earhpones-section {
+    gap: 11px;
+  }
+
+  .earphones-left {
+    background: url("../../assets/home/tablet/image-earphones-yx1.jpg");
+    border-radius: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .earphones-img-tablet {
+    display: flex;
+    width: 369px;
+  }
+
+  .earphones-right{
+    padding-left: 41px;
+    
+}
+}
+
+
+
+

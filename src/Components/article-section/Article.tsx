@@ -1,5 +1,7 @@
 import "./article.css"
+import "./article-tablet.css"
 import ArticleIMG from "../../assets/shared/desktop/image-best-gear.jpg"
+import TabletIMG from "../../assets/shared/tablet/image-best-gear.jpg"
 
 
 
@@ -9,6 +11,9 @@ const Article = () => {
     
     <article className="gear-article">
       <div className="container gear-container">
+        <div className="gear-top-tablet">
+          <img  src={TabletIMG} alt="gear img" />
+        </div>
         <div className="gear-left">
           <h1>
             Bringing you the <span>best</span> audio gear

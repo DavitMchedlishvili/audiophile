@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+  .hero-container {
+    background: url("../../assets/home/tablet/image-header.jpg");
+    justify-content: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center bottom
+  }
+
+
+  .hero-left{
+    
+    align-items: center;
+  }
+}

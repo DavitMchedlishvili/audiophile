@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Cart from "../cart/Cart";
 import "./header.css";
+import "./header-tablet.css"
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -11,6 +12,7 @@ const Header = () => {
     <>
     <div className="header">
       <div className="container header-container">
+
         <Link className="header-logo" to="/">
           audiophile
         </Link>

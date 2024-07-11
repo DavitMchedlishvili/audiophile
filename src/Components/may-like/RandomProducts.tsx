@@ -23,7 +23,7 @@ const RandomProducts = () => {
         {randomPorudcts.map((product) => (
             
             <div key={product.id} className="random-product-Singlecard">
-                <img  src={`/${product.image.desktop}`}alt="" />
+                <img  src={`/${product.image. }`}alt="" />
                 <h3>{product.name}</h3>
                 <Link className="orange-btn" to={`/products/${param.productName}/${product.id}`}>See Product</Link>
              </div>

@@ -55,6 +55,11 @@
     z-index: 2;
   }
   
+
+.speaker-img-tablet{
+    display: none;
+}
+
   .circle-img {
     position: absolute;
     max-width: 944px;

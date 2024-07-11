@@ -42,15 +42,18 @@
 .single-product{
 
     display: flex;
-
+    flex-direction: row;
 }
 
 
-.single-product img{
+.single-product-img{
     width: 540px;
     border-radius: 10px;
 }
 
+.single-product-tablet-img{
+    display: none;
+}
 
 .reverse{
     flex-direction: row-reverse;

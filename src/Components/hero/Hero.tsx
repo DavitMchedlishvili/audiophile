@@ -1,4 +1,5 @@
 import "./hero.css"
+import "./hero-tablet.css"
 
 
 const Hero = () => {

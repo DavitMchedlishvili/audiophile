@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px){
+    .gear-right{
+        display: none;
+    }
+
+    .gear-container{
+        display: flex;
+        flex-direction: column;
+        gap: 63px;
+    }
+
+    .gear-top-tablet{
+        display: flex;
+        width: 100%;
+    }
+
+    .gear-top-tablet img{
+        width: 689px;
+    }
+
+
+    .gear-left{
+        text-align: center;
+        width: 80%;
+    }
+
+}

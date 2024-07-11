@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./footer.css";
+import "./footer-tablet.css"
 
 const Footer = () => {
   return (
@@ -25,7 +26,10 @@ const Footer = () => {
                 devoted to helping you get the most out of personal audio. Come
                 and visit our demo facility - we're open 7 days a week.
               </p>
+              <div className="copyright-div">
               <p className="copyright">Copyright 2021. All Rights Reserved</p>
+              </div>
+              
             </div>
             <div className="footer-social-icons">
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">

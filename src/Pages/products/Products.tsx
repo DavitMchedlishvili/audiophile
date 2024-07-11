@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import ProductSection from "../../Components/product-section/ProductSection";
 import Article from "../../Components/article-section/Article";
 import "./products.css";
+import "./products-tablet.css"
 
 
 
@@ -51,8 +52,11 @@ const Products = () => {
                           : "single-product"
                       }
                     >
-                      <img src={`/${item.image.desktop}`} alt="image" />
-
+                      <div className="single-product-img-div">
+                      <img className="single-product-img" src={`/${item.image.desktop}`} alt="image" />
+                      {/* <img className="single-product-tablet-img" src={`/${item.image.tablet}`} alt="image" /> */}
+                      </div>
+                      
                       <div className="product-info">
                         {item.new ? <p className="new">New Product</p> : null}
                         <h1 className="product-name">{item.name}</h1>

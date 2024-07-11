@@ -7,7 +7,7 @@
 .earphones-section{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 11px;
     
 
     
@@ -15,15 +15,12 @@
 
 
 
-.earphones-img{
-    
-    border-radius: 10px;
-    
-}
-    
+ 
  
 .earphones-left{
-    max-height: 320px;
+    background: url("../../assets/home/desktop/image-earphones-yx1.jpg");
+    border-radius: 10px;
+   
     width: 50%;
     
     
@@ -42,6 +39,11 @@
         gap: 32px;
 }
 
+
+.earphones-right h1{
+    font-size: 28px;
+    width: 245px;
+}
 
 
 

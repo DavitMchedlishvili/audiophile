@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    .single-product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    /* .single-product-img{
+        display: none;
+    } */
+
+    .single-product-img {
+        display:block;
+        width: 250px;
+        height: 243px;
+    }
+
+    .single-product-img-div{
+        display: flex;
+        border-radius: 10px;
+        width: 689px;
+        background-color: #F1F1F1;
+       justify-content: center;
+    }
+
+    .product-info{
+        align-items: center;
+        width: 100%;
+    }
+}

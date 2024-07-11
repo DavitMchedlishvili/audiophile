@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+
+    
+    .footer-navigation{
+        display: block;
+        padding-top: 60px;
+}
+
+.footer-navigation-links{
+    margin-top: 32px;
+}
+
+.website-description{
+    border: 2px red solid;
+}
+
+}

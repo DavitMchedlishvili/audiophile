@@ -1,5 +1,6 @@
 import "./earphone-section.css"
-import EarphonesImg from "../../assets/home/desktop/image-earphones-yx1.jpg"
+import "./earphone-section-tablet.css"
+
 
 
 
@@ -8,7 +9,7 @@ const EarphoneSection = () => {
     <section className="earphones">
         <div className="container earphones-section">
             <div className="earphones-left">
-              <img className="earphones-img" src={EarphonesImg} alt="" />
+             
             </div>
             <div className="earphones-right">
                 <h1>YX1 EARPHONES</h1>

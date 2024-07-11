@@ -1,4 +1,4 @@
-import "./product-section.css";
+  import "./product-section.css";
 import HeadphoneImg from "../../assets/shared/desktop/image-category-thumbnail-headphones.png";
 import SpeakersImg from "../../assets/shared/desktop/image-category-thumbnail-speakers.png";
 import Earphones from "../../assets/shared/desktop/image-category-thumbnail-earphones.png";
