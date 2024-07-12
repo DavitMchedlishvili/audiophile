@@ -59,7 +59,7 @@ const SingleProduct: React.FC = () => {
   }
 
   if (status === "loading") {
-    return <div className="container data-loading-massage">...loading</div>;
+    return <div className="container data-loading-massage">loading...</div>;
   }
 
   if (!product) {

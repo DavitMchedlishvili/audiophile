@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
     .checkout-summary-container{
-        border: red solid 2px;
+       
         display: flex;
         flex-direction: column;
     }

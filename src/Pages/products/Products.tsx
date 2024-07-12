@@ -24,12 +24,13 @@ const Products = () => {
     
   }, [dispatch]);
 
-  if (status === "failed") {
-    return <div>error happend</div>;
-  }
+  
 
   if (status === "loading") {
-    return <div>...loading</div>;
+    return <div className="container data-loading-massage">loading...</div>;
+  }
+  if (status === "failed") {
+    return <div className="container data-error-massage" >error happend</div>;
   }
 
   return (

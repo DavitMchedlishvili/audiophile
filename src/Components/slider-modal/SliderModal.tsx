@@ -10,7 +10,7 @@ type Props = {
 
 const SliderModal = ({ setBurgerIsOpen,  burgerIsOpen}: Props) => {
   return (
-    <div className="burger-menu-modal">
+    
       <Modal
       className="burger-modal"
       isOpen={burgerIsOpen}
@@ -29,7 +29,7 @@ const SliderModal = ({ setBurgerIsOpen,  burgerIsOpen}: Props) => {
 
 
       </Modal>
-    </div>
+    
   )
 }
 
