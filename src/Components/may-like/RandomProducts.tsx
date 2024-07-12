@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useAppSelector } from "../../Store/hooks";
 import { Data } from "../../Types/products";
 import "./random-products.css"
+import "./random-products-tablet.css"
 
 const RandomProducts = () => {
 
@@ -23,7 +24,8 @@ const RandomProducts = () => {
         {randomPorudcts.map((product) => (
             
             <div key={product.id} className="random-product-Singlecard">
-                <img  src={`/${product.image. }`}alt="" />
+                <img className= "random-desktop-img" src={`/${product.image.desktop }`}alt="" />
+                <img className="random-tablet-img" src={`/${product.image.tablet }`}alt="" />
                 <h3>{product.name}</h3>
                 <Link className="orange-btn" to={`/products/${param.productName}/${product.id}`}>See Product</Link>
              </div>

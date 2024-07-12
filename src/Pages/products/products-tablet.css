@@ -6,16 +6,18 @@
         text-align: center;
     }
 
-
-
-    /* .single-product-img{
-        display: none;
+/* 
+    .single-product-tablet-img{
+        display: block;
+        width: 250px;
+        height: 243px;
     } */
 
     .single-product-img {
-        display:block;
+        display: block;
         width: 250px;
         height: 243px;
+        
     }
 
     .single-product-img-div{

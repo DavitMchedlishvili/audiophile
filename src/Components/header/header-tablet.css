@@ -1,3 +1,19 @@
 @media screen and (max-width: 768px) {
-    
+    .hamburger-div{
+    display: block;
+   }
+
+   .navigation{
+    display: none;
+   }
+
+   .header-container{
+    justify-content:flex-start
+   }
+
+   .header-logo{
+    padding-left: 42px;
+    padding-right: 440px;
+   }
+
 }

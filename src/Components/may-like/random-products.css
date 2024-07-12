@@ -33,7 +33,12 @@
 }
 
 
-.random-product-Singlecard img{
+.random-desktop-img{
     width: 350px;
     border-radius: 10px;
+}
+
+
+.random-tablet-img{
+    display: none;
 }

@@ -3,13 +3,15 @@ import { useParams } from "react-router-dom";
 import { fetchProducts } from "../../Store/Products/Products.asyncActions";
 import { useAppDispatch, useAppSelector } from "../../Store/hooks";
 import GoBackButton from "../../Components/go-back-button/GoBackButton";
-import "./product.css";
+
 import ProductSection from "../../Components/product-section/ProductSection";
 import Article from "../../Components/article-section/Article";
 import RandomProducts from "../../Components/may-like/RandomProducts";
 import { Product } from "../../Types/products";
 import { cartItem, updateCart } from "../../Store/Cart.Slice";
 import Counter from "../../Components/counter/Counter";
+import "./product.css";
+import "./product-tablet.css"
 
 export const getProductCurrNumber = (
   cartArray: cartItem[],
@@ -77,6 +79,11 @@ const SingleProduct: React.FC = () => {
               src={`/${product.image.desktop}`}
               alt="image"
             />
+            <img
+              className="product-details-tablet-image"
+              src={`/${product.image.tablet}`}
+              alt="image"
+            />
             <div className="product-details">
               {product.new ? <p className="new">New Product</p> : null}
               <h1 className="product-details-name">{product.name}</h1>
@@ -142,6 +149,29 @@ const SingleProduct: React.FC = () => {
                 src={`/${product.gallery.third.desktop}`}
                 alt="image"
               />
+
+            </div>
+          </div>
+          <div className="gallery-tablet">
+            <div className="gallery-left-tablet">
+              <img
+                className="gallery-left-top-tablet"
+                src={`/${product.gallery.first.tablet}`}
+                alt="image"
+              />
+              <img
+                className="gallery-left-bottom-tablet"
+                src={`/${product.gallery.second.tablet}`}
+                alt="image"
+              />
+            </div>
+            <div className="gallery-right-tablet">
+              <img
+                className="gallery-right-image-tablet"
+                src={`/${product.gallery.third.tablet}`}
+                alt="image"
+              />
+              
             </div>
           </div>
         </div>

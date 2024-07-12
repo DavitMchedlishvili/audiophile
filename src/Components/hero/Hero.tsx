@@ -1,5 +1,6 @@
 import "./hero.css"
 import "./hero-tablet.css"
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -13,7 +14,7 @@ const Hero = () => {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <a className="orange-btn" href="/products/headphones/4">See product</a>
+          <Link className="orange-btn" to="/products/headphones/4">See product</Link>
         </div>
       </div>
     </section>

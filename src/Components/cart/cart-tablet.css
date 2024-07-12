@@ -1,0 +1,6 @@
+@media screen and (max-Width: 768px){
+    .cart-modal{
+        max-width: 377px;
+        margin-right: 5%;
+    }
+}

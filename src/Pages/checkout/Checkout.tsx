@@ -5,6 +5,7 @@ import { useAppSelector } from "../../Store/hooks";
 import { Rootstate } from "../../Store/store";
 import { formatNumberWithDots } from "../product/Product";
 import "./checkout.css";
+import "./checkout-tablet.css"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CheckoutModal from "../../Components/checkout-modal/CheckoutModal";
@@ -44,8 +45,8 @@ const Checkout = () => {
   } = useForm<Inputs>();
 
   const onSubmit = (data: Inputs) => {
-    console.log("btn works", data);
-    setIsOpen(true);
+   data;
+   setIsOpen(true);
   };
 
   useEffect(() => {

@@ -21,6 +21,7 @@ const Products = () => {
 
   useEffect(() => {
     dispatch(fetchProducts());
+    
   }, [dispatch]);
 
   if (status === "failed") {

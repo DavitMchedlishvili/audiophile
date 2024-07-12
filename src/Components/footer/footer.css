@@ -51,7 +51,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 56px;
-    border: 2px red solid;
+    
 }
 
 
@@ -82,9 +82,14 @@ footer{
 }
 
 
+.copyright-div{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
-
-
+.tablet-icons{
+    display: none;
+}
 

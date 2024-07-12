@@ -1,6 +1,7 @@
 import { Dispatch } from "react";
 import Modal from "react-modal";
 import "./cart.css";
+import "./cart-tablet.css"
 
 import { Rootstate } from "../../Store/type";
 import { useAppSelector } from "../../Store/hooks";

@@ -6,7 +6,7 @@
   justify-content: space-between;
   padding-top: 50px;
   gap: 30px;
- 
+  
  
 }
 
@@ -45,13 +45,16 @@
     text-transform: uppercase;
     font-size: 13px;
     font-weight: bold;
+    
 }
 
 
 .shop-btn{
   display: flex;
   align-items: center;
-
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: gray;
   gap: 13px;
 }
 
