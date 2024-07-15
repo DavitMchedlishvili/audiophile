@@ -7,6 +7,10 @@ type Props = {
   setBurgerIsOpen: Dispatch<React.SetStateAction<boolean>>;
 };
 
+
+// this is hamburger menu
+
+
 const Hamburger: React.FC<Props> = ({ burgerIsOpen, setBurgerIsOpen }) => {
   const toggleMenu = () => {
     setBurgerIsOpen(!burgerIsOpen);
