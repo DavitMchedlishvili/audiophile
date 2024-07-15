@@ -51,9 +51,7 @@
     border-radius: 10px;
 }
 
-.single-product-tablet-img{
-    display: none;
-}
+
 
 .reverse{
     flex-direction: row-reverse;

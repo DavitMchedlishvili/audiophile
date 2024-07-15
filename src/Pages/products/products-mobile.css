@@ -1,0 +1,35 @@
+@media screen and (max-width: 375px) {
+    .products-page-container{
+        gap: 120px;
+    }
+    
+    .single-product-img-div{
+        display: flex;
+        border-radius: 10px;
+        min-width: 327px;
+        min-height: 352px;
+        background-color: #F1F1F1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .single-product{
+        gap: 32px
+    }
+
+   .single-product-img{
+    min-width: 327px;
+   }
+
+
+   .product-info{
+    max-width: 327px;
+    padding: 0px;
+    gap: 24px;
+    
+   }
+
+   .product-info p{
+    width: 100%;
+   }
+}

@@ -1,7 +1,13 @@
-  import "./product-section.css";
 import HeadphoneImg from "../../assets/shared/desktop/image-category-thumbnail-headphones.png";
 import SpeakersImg from "../../assets/shared/desktop/image-category-thumbnail-speakers.png";
 import Earphones from "../../assets/shared/desktop/image-category-thumbnail-earphones.png";
+import "./product-section.css";
+import "./product-section-mobile.css";
+import { Link } from "react-router-dom";
+
+
+
+
 
 const ProductSection = () => {
   return (
@@ -11,8 +17,8 @@ const ProductSection = () => {
           <div className="product-card">
             <img src={HeadphoneImg} alt="" />
             <h3>Headphones</h3>
-            <a className="shop-btn" href="/products/headphones">
-              Shop   {" "}
+            <Link className="shop-btn" to="/products/headphones">
+              Shop{" "}
               <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M1.322 1l5 5-5 5"
@@ -22,14 +28,14 @@ const ProductSection = () => {
                   fillRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="product-card">
             <img src={SpeakersImg} alt="" />
             <h3>Speakers</h3>
-            <a className="shop-btn" href="/products/speakers">
-              Shop   {" "}
+            <Link className="shop-btn" to="/products/speakers">
+              Shop{" "}
               <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M1.322 1l5 5-5 5"
@@ -39,14 +45,14 @@ const ProductSection = () => {
                   fillRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="product-card">
             <img src={Earphones} alt="" />
             <h3>Earphones</h3>
-            <a className="shop-btn" href="/products/earphones">
-              Shop    {" "}
+            <Link className="shop-btn" to="/products/earphones">
+              Shop{" "}
               <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M1.322 1l5 5-5 5"
@@ -56,7 +62,7 @@ const ProductSection = () => {
                   fillRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

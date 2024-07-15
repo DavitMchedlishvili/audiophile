@@ -2,6 +2,7 @@ import { Dispatch } from "react";
 import Modal from "react-modal";
 import ProductSection from "../product-section/ProductSection";
 import "./slider-modal.css"
+import "./slider-modal-mobile.css"
 
 type Props = {
     burgerIsOpen: boolean;

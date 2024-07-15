@@ -1,0 +1,28 @@
+@media screen and (max-width: 375px) {
+    .earphones-section{
+        display: flex;
+        flex-direction: column;
+       
+        min-width: 327px;
+
+        
+    }
+
+
+    .earphones-left{
+        background: url("../../assets/home/mobile/image-earphones-yx1.jpg");
+        background-position: center center;
+        background-size: 327px;
+        width: 100%;
+        min-height: 200px;
+        
+        
+    }
+
+
+    .earphones-right {
+        width: 100%;
+        padding: 41px 25px;
+
+    }
+}

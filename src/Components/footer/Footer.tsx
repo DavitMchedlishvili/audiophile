@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./footer.css";
 import "./footer-tablet.css"
+import "./footer-mobile.css"
 
 const Footer = () => {
   return (

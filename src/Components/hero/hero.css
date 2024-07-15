@@ -35,6 +35,7 @@
   .hero-left h1 {
     font-size: 58px;
     line-height: 1;
+    /* font-weight: bold; */
   }
 
   .hero-left p{

@@ -6,6 +6,7 @@ import { Rootstate } from "../../Store/store";
 import { formatNumberWithDots } from "../product/Product";
 import "./checkout.css";
 import "./checkout-tablet.css"
+import "./checkout-mobile.css"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CheckoutModal from "../../Components/checkout-modal/CheckoutModal";
@@ -145,7 +146,7 @@ const Checkout = () => {
               {/* Shipping info /////////////////////////////////////////////////////////////////////*/}
               <div className="shipping-container">
                 <h3>Shipping Info</h3>
-                <div>
+                <div className="address-div-overall">
                   <div className="address-div">
                     <Input
                       {...register("address", {

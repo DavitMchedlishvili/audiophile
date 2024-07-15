@@ -1,0 +1,29 @@
+@media screen and (max-width: 375px) {
+    .burger-modal{
+        display: flex;
+        flex-direction: column;
+        
+        top: 103;
+        position: fixed;
+       
+
+        max-width: 375px;
+        min-height: 750px;
+
+        right: -75px;
+       
+        
+    } 
+
+    .slider-menu{
+        display: flex;
+        flex-direction: column;
+        
+        margin: auto 24px;
+
+        max-width: 327px;
+        min-height: 683px;
+       
+    }
+
+}

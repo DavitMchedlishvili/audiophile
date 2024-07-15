@@ -1,0 +1,10 @@
+@media screen and (max-width: 375px) {
+    .gear-top-tablet img{
+        min-width: 327px;
+        border-radius: 10px;
+        
+    }
+
+    
+    
+}

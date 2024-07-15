@@ -1,13 +1,6 @@
 @media screen and (max-width: 768px) {
     
-    .random-desktop-img{
-        display: none;
-    }
-    
-    .random-tablet-img{
-        display: block;
-        max-width: 223px;
-        max-height: 318px;
-        border-radius: 10px;
-    }
+   .random-product-Singlecard img{
+    width: 223px;
+   }
 }

@@ -1,0 +1,12 @@
+@media screen and (max-width: 375px) {
+      
+       .header-container{
+        justify-content:space-between;
+        
+       }
+    
+       .header-logo{
+        padding: 0;
+        
+       }
+}

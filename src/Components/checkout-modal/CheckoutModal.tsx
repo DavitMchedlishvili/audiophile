@@ -4,6 +4,7 @@ import { Dispatch } from "react";
 import { useState } from "react";
 import Modal from "react-modal";
 import "./checkout-modal.css";
+import "./checkout-modal-mobile.css"
 import { useNavigate } from "react-router-dom";
 import { formatNumberWithDots } from "../../Pages/product/Product";
 

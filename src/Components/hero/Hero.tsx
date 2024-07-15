@@ -1,5 +1,6 @@
 import "./hero.css"
 import "./hero-tablet.css"
+import "./hero-mobile.css"
 import { Link } from "react-router-dom";
 
 

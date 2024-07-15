@@ -1,17 +1,25 @@
 import { useState } from "react";
 import Cart from "../cart/Cart";
-import "./header.css";
-import "./header-tablet.css";
 import { Link } from "react-router-dom";
 import Hamburger from "../hamburger-menu/Hamburger";
-// import ProductSection from "../product-section/ProductSection";
 import SliderModal from "../slider-modal/SliderModal";
+import "./header.css";
+import "./header-tablet.css";
+import "./header-mobile.css"
+
+import { Rootstate } from "../../Store/store";
+import { useAppSelector } from "../../Store/hooks";
+// import ProductSection from "../product-section/ProductSection";
 // import ProductSection from "../product-section/ProductSection";
 
 const Header = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   const [burgerIsOpen, setBurgerIsOpen] = useState(false);
+
+  const cartArray = useAppSelector((state: Rootstate) => state.cart.value);
+
+
 
   return (
     <>
@@ -29,8 +37,10 @@ const Header = () => {
               //   </div>
               // </div>
 
-
-              <SliderModal setBurgerIsOpen={setBurgerIsOpen} burgerIsOpen={burgerIsOpen}/>
+              <SliderModal
+                setBurgerIsOpen={setBurgerIsOpen}
+                burgerIsOpen={burgerIsOpen}
+              />
             )}
           </div>
 
@@ -51,6 +61,7 @@ const Header = () => {
               Earphones
             </Link>
           </div>
+          <div className="cart-div">
           <button className="cart" onClick={() => setIsOpen(true)}>
             <svg width="30" height="20" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -59,11 +70,15 @@ const Header = () => {
                 fillRule="nonzero"
               />
             </svg>
+            
           </button>
+          {/* <p>{`(${cartArray.length})`}</p> */}
+          </div>
+         
         </div>
       </div>
       <Cart setIsOpen={setIsOpen} modalIsOpen={modalIsOpen} />
-    
+      
     </>
   );
 };

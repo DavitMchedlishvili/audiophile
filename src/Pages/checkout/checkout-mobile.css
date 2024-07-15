@@ -1,0 +1,65 @@
+@media screen and (max-width: 375px) {
+   
+   
+   
+    .checkout-inputs-container{
+        padding: 31px 23px;
+    }
+     
+   
+
+    .inputs-form div{
+        display: flex;
+        flex-direction: column;
+        min-width: 280px;
+
+        gap: 24px;
+    }
+
+    .phone-inpt{
+        padding-bottom: 24px;
+    }
+
+    .address-div{
+        max-width: 280px;
+    }
+    
+    .address-additional{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 24px;
+    }
+
+    .address-additional-left, .address-additional-right {
+        
+        min-width: 280px;
+      
+        padding: 0px;
+    }
+
+    .payment-options{ 
+       display: flex;
+       flex-direction: column;
+       min-width: 280px;
+       gap: 17px;
+    }
+   
+    .payment-options div{
+        width: 280px;
+    }
+
+    .emoney-inputs{
+        display: flex;
+        flex-direction: column;
+        max-width: 280px;
+    }
+
+    .cash-delivery{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* text-align: center; */
+        gap: 16px;
+    }
+}

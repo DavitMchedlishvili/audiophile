@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import "./speaker-zx7.css"
 import "./speaker-zx7-tablet.css"
+import "./speaker-zx7-mobile.css"
 
 const SpeakerZx7 = () => {
   return (

@@ -11,7 +11,8 @@ import { Product } from "../../Types/products";
 import { cartItem, updateCart } from "../../Store/Cart.Slice";
 import Counter from "../../Components/counter/Counter";
 import "./product.css";
-import "./product-tablet.css"
+import "./product-tablet.css";
+import "./product-mobile.css";
 
 export const getProductCurrNumber = (
   cartArray: cartItem[],
@@ -74,16 +75,19 @@ const SingleProduct: React.FC = () => {
         <GoBackButton />
         <div className="product-details-overall">
           <div className="product-details-container">
-            <img
-              className="product-details-image"
-              src={`/${product.image.desktop}`}
-              alt="image"
-            />
-            <img
-              className="product-details-tablet-image"
-              src={`/${product.image.tablet}`}
-              alt="image"
-            />
+            <picture className="product-details-image">
+              <source
+                media="(max-width: 375px) "
+                srcSet={`/${product.image.mobile}`}
+              />
+              <source
+                media="(min-width: 376px) and (max-width: 768px)"
+                srcSet={`/${product.image.tablet}`}
+              />
+
+              <img src={`/${product.image.desktop}`} alt="image" />
+            </picture>
+
             <div className="product-details">
               {product.new ? <p className="new">New Product</p> : null}
               <h1 className="product-details-name">{product.name}</h1>
@@ -117,7 +121,7 @@ const SingleProduct: React.FC = () => {
               ))}
             </div>
 
-            <div className="inTheBox">
+            <div className="in-the-box">
               <h1>In The Box</h1>
               <div className="product-includes">
                 {product.includes.map((item, index) => (
@@ -132,27 +136,42 @@ const SingleProduct: React.FC = () => {
 
           <div className="gallery">
             <div className="gallery-left">
-              <img
-                className="gallery-left-top"
-                src={`/${product.gallery.first.desktop}`}
-                alt="image"
-              />
-              <img
-                className="gallery-left-bottom"
-                src={`/${product.gallery.second.desktop}`}
-                alt="image"
-              />
+              <picture className="gallery-left-top">
+                <source
+                  media="(max-width 375px)"
+                  srcSet={`/${product.gallery.first.mobile}`}
+                />
+                <source
+                  media="(min-width: 376px) and (max-width: 768px)"
+                  srcSet={`/${product.gallery.first.tablet}`}
+                />
+                <img src={`/${product.gallery.first.desktop}`} alt="image" />
+              </picture>
+              <picture className="gallery-left-bottom">
+                <source
+                  media="(max-width 375px)"
+                  srcSet={`/${product.gallery.second.mobile}`}
+                />
+                <source
+                  media="(min-width: 376px) and (max-width: 768px)"
+                  srcSet={`/${product.gallery.second.tablet}`}
+                />
+                <img src={`/${product.gallery.second.desktop}`} alt="image" />
+              </picture>
             </div>
-            <div className="gallery-right">
-              <img
-                className="gallery-right-image"
-                src={`/${product.gallery.third.desktop}`}
-                alt="image"
+            <picture className="gallery-right">
+              <source
+                media="(max-width 375px)"
+                srcSet={`/${product.gallery.third.mobile}`}
               />
-
-            </div>
+              <source
+                media="(min-width: 376px) and (max-width: 768px)"
+                srcSet={`/${product.gallery.third.tablet}`}
+              />
+              <img src={`/${product.gallery.third.desktop}`} alt="image" />
+            </picture>
           </div>
-          <div className="gallery-tablet">
+          {/* <div className="gallery-tablet">
             <div className="gallery-left-tablet">
               <img
                 className="gallery-left-top-tablet"
@@ -173,7 +192,7 @@ const SingleProduct: React.FC = () => {
               />
               
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <RandomProducts />

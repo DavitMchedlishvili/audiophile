@@ -2,7 +2,7 @@
     background-color: #191919;
     
     color: white;
-   
+   /* z-index: 10px; */
   }
   
  .header-container {
@@ -17,6 +17,7 @@
     font-size: 28px;
     font-weight: bold;
     text-transform: lowercase;
+    /* z-index: 1; */
   }
 
   .navigation {
@@ -45,12 +46,17 @@
     border: none;
     box-shadow: none;
     cursor: pointer;
+    z-index: 10;
     
   }
 
 
   .cart:hover svg path{
     fill: var(--color-primary)
+  }
+
+  .cart-div{
+    display: flex;
   }
 
 

@@ -1,0 +1,14 @@
+@media screen and (max-width: 375px) {
+    .speaker-zx7-container{
+        min-width: 327px;
+        background: url("../../assets/home/mobile/image-speaker-zx7.jpg");
+        background-repeat: no-repeat;
+        background-size: 327px ;
+        
+        background-position: left center;
+
+        padding: 101px 99px 101px 25px;
+    }
+
+
+}

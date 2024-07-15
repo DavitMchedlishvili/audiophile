@@ -1,5 +1,7 @@
 import "./earphone-section.css"
 import "./earphone-section-tablet.css"
+import "./earphones-section-mobile.css"
+import { Link } from "react-router-dom"
 
 
 
@@ -13,7 +15,7 @@ const EarphoneSection = () => {
             </div>
             <div className="earphones-right">
                 <h1>YX1 EARPHONES</h1>
-                <a className="gray-btn" href="/products/earphones/1">See Product</a>
+                <Link className="gray-btn" to="/products/earphones/1">See Product</Link>
             </div>
         </div>
     </section>

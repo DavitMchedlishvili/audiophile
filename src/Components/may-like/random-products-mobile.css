@@ -1,0 +1,20 @@
+@media screen and (max-width: 375px) {
+    .random-products-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 56px;
+    }
+
+    .random-products-images{
+        min-width: 327px;
+        border-radius: 10px;
+        display: flex;
+        background-color: #F1F1F1;
+        justify-content: center;
+    }
+
+    .random-products-images img{
+        max-width: 120px;
+    }
+}

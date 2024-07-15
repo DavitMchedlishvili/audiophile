@@ -1,86 +1,60 @@
 @media screen and (max-width: 768px) {
-    
-    .product-details-container {
-        
-        
-        gap: 69px;
-    }
+  .product-details-container {
+    gap: 69px;
+  }
 
-    .product-details{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    
-        padding: 0;
-    }
-    
-    .product-details-image{
-        display: none;
-    }
-    
-    
-    .product-details-tablet-image{
-        display: block;
-        max-width: 281px;
-        height: 480px;
-    }
-    
+  .product-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 
-    .additional-details{
-        display: flex;
-        flex-direction: column;
-        gap: 120px;
-    }
+    padding: 0;
+  }
 
-    .features{
-        width: 100%;
-    }
+  .product-details-image img {
+    width: 281px;
+  }
 
-    .inTheBox{
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-    }
+  .additional-details {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+  }
 
+  .features {
+    width: 100%;
+  }
 
-    .gallery{
-       display: none;
-    }
+  .in-the-box {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .gallery-tablet {
+    max-width: 690px;
+    max-height: 368px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+  }
 
-    .gallery-tablet{
-        max-width: 690px;
-        max-height: 368px;
-        display: block;
-        display: flex;
-        justify-content: space-between;
-        gap: 18px;
-    }
+  .gallery-right img {
+    width: 395px;
+  }
+  .gallery-right {
+    max-height: 368px;
+  }
+  .gallery-left {
+    gap: 20px;
+  }
+  .gallery-left img {
+    width: 277px;
+  }
 
-
-    
-    
-    
-    .gallery-left-tablet{
-        
-        display: flex;
-        flex-direction: column;
-        gap: 20px
-    }
-    
-    
-    .gallery-tablet img{
-        border-radius: 10px;
-        
-    }
-
-    .gallery-left-tablet img{
-        max-width: 277px;
-        max-height: 174px;
-    }
-
-    .gallery-right-image-tablet{
-        max-width: 395px;
-        max-height: 368px;
-    }
+  .gallery-left-top,
+  .gallery-left-bottom {
+    max-height: 174px;
+  }
 }

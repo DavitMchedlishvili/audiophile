@@ -1,0 +1,31 @@
+@media screen and (max-width: 375px) {
+    .footer-container{
+        text-align: center;
+    }
+
+    .footer-navigation{
+        padding: 52px 0 48px;
+    }
+    .footer-navigation-links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright-div{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        align-items: center;
+    }
+
+    .footer-social-icons{
+         
+         max-width: 104px;
+         justify-content: space-between;
+    }
+
+
+    .footer-line{
+        margin: 0 auto;
+    }
+}

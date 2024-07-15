@@ -6,26 +6,27 @@
         text-align: center;
     }
 
-/* 
-    .single-product-tablet-img{
-        display: block;
-        width: 250px;
-        height: 243px;
-    } */
+ 
+   
 
+     
     .single-product-img {
         display: block;
-        width: 250px;
-        height: 243px;
+        width: 220px;
         
-    }
+    } 
+
+
+    
 
     .single-product-img-div{
         display: flex;
         border-radius: 10px;
-        width: 689px;
+        min-width: 689px;
+        max-height: 352px;
         background-color: #F1F1F1;
        justify-content: center;
+       
     }
 
     .product-info{

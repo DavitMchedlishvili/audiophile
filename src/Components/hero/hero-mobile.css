@@ -1,0 +1,23 @@
+@media screen and (max-width: 375px) {
+  .hero{
+    overflow: visible;
+    background: url("../../assets/home/mobile/image-header.jpg");
+    justify-content: center;
+    background-size: 100%;
+    background-repeat: cover;
+
+  }
+
+
+  .hero-container{
+    background: transparent;
+  }
+
+  .hero-left {
+    /* border: solid 2px red; */
+    text-align: center;
+  }
+  .hero-left h1 {
+    font-size: 36px;
+  }
+}

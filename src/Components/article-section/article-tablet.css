@@ -1,21 +1,25 @@
 @media screen and (max-width: 768px){
-    .gear-right{
-        display: none;
-    }
+    
 
     .gear-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        
         gap: 63px;
+
+        vertical-align: center;
     }
 
     .gear-top-tablet{
         display: flex;
+        justify-content: center;
         width: 100%;
     }
 
     .gear-top-tablet img{
         width: 689px;
+        border-radius: 10px;
+       
     }
 
 
@@ -24,4 +28,7 @@
         width: 80%;
     }
 
+
+
+  
 }

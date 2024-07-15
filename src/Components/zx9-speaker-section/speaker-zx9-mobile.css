@@ -1,0 +1,49 @@
+@media screen and (max-width: 375px) {
+    
+    .speaker-zx9-container {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        max-width: 698px;
+        min-height: 600px;
+        padding: 55px 84px;
+        
+      }
+
+      .zx9-right{
+        min-width: 280px;
+        gap: 24px;
+        align-items: center;
+        text-align: center;
+       
+        
+      }
+
+      .zx9-right h1{
+        letter-spacing: 1.30px;
+        line-height: 40px;
+        font-size: 36px;
+        text-align: center;
+      }
+
+      .word{
+        display: block;
+    }
+    
+    .speaker-zx9-image img{
+        width: 155px;
+        top: 70px; 
+        
+       
+    }
+
+   
+    
+    .circle-img {
+        
+        position: absolute;
+        width: 558px;
+        height: 558px;
+        top: -100px;
+      }
+}

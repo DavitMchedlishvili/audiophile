@@ -6,7 +6,7 @@
 
 
 .gear-container{
-    max-height: 588px;
+    /* max-height: 588px; */
     margin-bottom: 160px;
     display: flex;
     flex-direction: row;
@@ -47,13 +47,10 @@
     
 }
 
-.gear-right img{
+.gear-desktop-img{
     
     border-radius: 10px;
     
 }
 
 
-.gear-top-tablet{
-    display: none;
-}
