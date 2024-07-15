@@ -7,9 +7,11 @@ import { Link } from "react-router-dom";
 
 
 
+type Props = {
+  linkOnClick? : () => void
+}
 
-
-const ProductSection = () => {
+const ProductSection = ({linkOnClick}: Props) => {
   return (
     <>
       <section className="products">
@@ -17,7 +19,11 @@ const ProductSection = () => {
           <div className="product-card">
             <img src={HeadphoneImg} alt="" />
             <h3>Headphones</h3>
-            <Link className="shop-btn" to="/products/headphones">
+            <Link className="shop-btn" to="/products/headphones" onClick={()=>{
+              if(linkOnClick){
+                linkOnClick()
+              }
+            }}>
               Shop{" "}
               <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -34,7 +40,12 @@ const ProductSection = () => {
           <div className="product-card">
             <img src={SpeakersImg} alt="" />
             <h3>Speakers</h3>
-            <Link className="shop-btn" to="/products/speakers">
+            <Link className="shop-btn" to="/products/speakers"
+            onClick={()=>{
+              if(linkOnClick){
+                linkOnClick()
+              }
+            }}>
               Shop{" "}
               <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -51,7 +62,11 @@ const ProductSection = () => {
           <div className="product-card">
             <img src={Earphones} alt="" />
             <h3>Earphones</h3>
-            <Link className="shop-btn" to="/products/earphones">
+            <Link className="shop-btn" to="/products/earphones" onClick={()=>{
+              if(linkOnClick){
+                linkOnClick()
+              }
+            }}>
               Shop{" "}
               <svg width="8" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path

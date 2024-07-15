@@ -1,4 +1,4 @@
-import { Dispatch } from "react";
+// import { Dispatch, useState } from "react";
 import Modal from "react-modal";
 import "./cart.css";
 import "./cart-tablet.css"
@@ -16,15 +16,17 @@ import { updateCart } from "../../Store/Cart.Slice";
 import ClearCartButton from "../clearCart-btn/ClearCart";
 import { useNavigate } from "react-router-dom";
 
+
 type Props = {
   modalIsOpen: boolean;
-  setIsOpen: Dispatch<React.SetStateAction<boolean>>;
+  toggleMenu: () => void;
 };
 
-const Cart = ({ modalIsOpen, setIsOpen }: Props) => {
+const Cart = ({ modalIsOpen, toggleMenu}: Props) => {
   const navigate = useNavigate();
   const cartArray = useAppSelector((state: Rootstate) => state.cart.value);
   const dispatch = useDispatch();
+
 
   return (
     <>
@@ -35,7 +37,7 @@ const Cart = ({ modalIsOpen, setIsOpen }: Props) => {
           onAfterOpen={() => (document.body.style.overflow = "hidden")}
           onAfterClose={() => (document.body.style.overflow = "auto")}
           shouldCloseOnOverlayClick={true}
-          onRequestClose={() => setIsOpen(false)}
+          onRequestClose={toggleMenu}
         >
           <div className="cart-container">
             {cartArray.length > 0 ? (
@@ -103,7 +105,7 @@ const Cart = ({ modalIsOpen, setIsOpen }: Props) => {
                   <button
                     className="cart-btn"
                     onClick={() => {
-                      setIsOpen(false);
+                      toggleMenu();
                       navigate("/checkout");
                     }}
                   >

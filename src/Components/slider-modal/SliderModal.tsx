@@ -22,7 +22,7 @@ const SliderModal = ({ setBurgerIsOpen,  burgerIsOpen}: Props) => {
 
         <div className="slider-menu">
 
-        <ProductSection/>
+        <ProductSection linkOnClick={()=>setBurgerIsOpen(false)}/>
         </div>
 
         
