@@ -4,12 +4,15 @@
     justify-content: center;
     background-size: 120%;
     background-repeat: no-repeat;
-    background-position: center bottom
+    background-position: center bottom;
+    text-align: center;
   }
 
 
   .hero-left{
-    
+    max-width: 349px;
     align-items: center;
   }
+
+  
 }
