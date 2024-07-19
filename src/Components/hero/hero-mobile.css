@@ -1,9 +1,10 @@
 @media screen and (max-width: 375px) {
   .hero{
+    max-width: 375px;
     overflow: visible;
     background: url("../../assets/home/mobile/image-header.jpg");
-    justify-content: center;
-    background-size: 100%;
+    background-position: 50% 150% ;
+    background-size: 110%;
     background-repeat: cover;
 
   }
